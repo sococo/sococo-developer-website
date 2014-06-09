@@ -1,0 +1,49 @@
+@headerHeight:75px;
+@headerHeightSmall:30px;
+
+@navbarBackgroundHighlight:       #ffffff;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBorder:                    darken(@navbarBackground, 12%);
+
+#header {
+   min-height: @headerHeightSmall;
+   position: relative;
+
+   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+   border-bottom: 1px solid @navbarBorder;
+   .box-shadow(0 1px 4px rgba(0,0,0,.065));
+
+   .container {
+      img {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+      }
+      h2, h1 {
+         margin:5px 0;
+         font-size: 18px;
+         a {
+            text-decoration: none;
+         }
+
+      }
+      p {
+         margin:0 0 3px;
+      }
+   }
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media screen and (min-width: @screen-sm-min) {
+   #header {
+      min-height: @headerHeight;
+      padding-left:  20px;
+      padding-right: 20px;
+      .container {
+         h1 {
+            font-size: 3em;
+         }
+      }
+   }
+}

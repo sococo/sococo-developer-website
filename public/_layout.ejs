@@ -1,0 +1,18 @@
+<html>
+<head>
+    <%- partial('partials/_headMeta.ejs') %>
+	<link rel="stylesheet" href="/app.css" />
+</head>
+
+<body class="index">
+
+<%- partial('partials/_header.ejs') %>
+
+<main class="container content-wrap">
+<%- yield %>
+</main>
+
+<%- partial('partials/_footer.ejs') %>
+
+</body>
+</html>

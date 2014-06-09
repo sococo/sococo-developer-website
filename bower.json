@@ -1,0 +1,21 @@
+{
+  "name": "dev.sococo.com",
+  "version": "0.0.0",
+  "authors": [
+    "Justin DuJardin <justin.dujardin@sococo.com>"
+  ],
+  "description": "Sococo Developers Site",
+  "license": "Proprietary",
+  "homepage": "http://developers.sococo.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.1.1"
+  }
+}

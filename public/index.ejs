@@ -1,0 +1,14 @@
+
+<% var odd = false;
+for(key in public.pages._data) {
+    var article = public.pages._data[key];
+%>
+<section class="summary<%- odd ? ' odd' : ' even'%>">
+    <header>
+        <h3><a href="/pages/<%- key %>.html"><%- article.title %></a></h3>
+    </header>
+    <footer>
+        <p><%- article.blurb || ''%></p>
+    </footer>
+</section>
+<% odd = !odd; } %>

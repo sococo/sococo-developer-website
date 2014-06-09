@@ -1,0 +1,63 @@
+@import "style/sococo";
+@import "../bower_components/bootstrap/less/bootstrap";
+@import "style/code";
+@import "partials/_header";
+@import "partials/_footer";
+
+
+html {
+   position: relative;
+}
+html,body {
+   min-height: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+   header {
+     a {
+         font-weight: 300;
+      }
+   }
+
+   header .date {
+      float: right;
+      font-weight: 300;
+      color: #999;
+      font-size: 12px;
+      font-style: italic;
+   }
+
+   main {
+      margin-top:5px;
+      > section {
+         text-align:center;
+         &.summary {
+            header {
+               h3 {
+                  margin-bottom:5px;
+               }
+            }
+            footer {
+               color:@gray-dark;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width: @screen-sm-min) {
+   body {
+      main {
+         margin-top:25px;
+         > section {
+            vertical-align: top;
+            display: inline-block;
+            text-align: left;
+            width:48%;
+         }
+      }
+   }
+}

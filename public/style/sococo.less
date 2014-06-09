@@ -1,0 +1,76 @@
+// --------------------------------------
+// Sococo Color Palette
+// --------------------------------------
+@sococoRed : #D67254;
+@sococoYellow: #F8D44C;
+@sococoBlue: #92C6E2;
+@sococoGreen: #90A844;
+@sococoGreenDark: #648872;
+@sococoSilver: #e6e6e6;
+@slate: #606D76;
+@slateDark: #3B474F;
+@slateBluish: #3e5667;
+
+@sococoBlueLight: #cde5f2;
+
+@grayBoxBorder: #afb6ba;
+@grayBoxFill: #f9f9f9;
+
+@blueFooter: #80aec7;
+
+// Extensions
+@blueLight: #D3E8F3;
+//@grayLight: #F1F1F1;
+
+// Override default body text color
+@textColor: @slateDark;
+
+// Links
+
+@sococoLinkBlue: #1B83BB;
+@sococoLinkActive: @sococoRed;
+
+// Animation
+
+// Set the animation-duration for all browsers and this element.
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+     -moz-animation-duration: @duration;
+       -o-animation-duration: @duration;
+          animation-duration: @duration;
+}
+
+
+.animated {
+   &.fast {
+      .animation-duration(0.3s);
+   }
+}
+
+// Selection ----
+
+// Make an element not support selection of text.
+.hide-selection {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+.selectable {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+
+// Cause text to spill over its edge and render, even if its box wraps.
+.overflow-text() {
+   overflow: visible;
+   white-space: nowrap;
+}
+
+// Make text wrap with ellipsis
+.ellipsis() {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
