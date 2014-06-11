@@ -1,18 +1,20 @@
 <html>
 <head>
+   <link rel="stylesheet" href="/app.css" />
     <%- partial('partials/_headMeta.ejs') %>
-	<link rel="stylesheet" href="/app.css" />
+
 </head>
 
 <body class="index">
-
-<%- partial('partials/_header.ejs') %>
-
-<main class="container content-wrap">
-<%- yield %>
-</main>
-
+<div class="body-container">
+   <%- partial('partials/_header.ejs') %>
+   <main class="container content-wrap">
+      <header class="content-inner">
+         <%- yield %>
+      </header>
+   </main>
+   <aside class="content-push"></aside>
+</div>
 <%- partial('partials/_footer.ejs') %>
-
 </body>
 </html>

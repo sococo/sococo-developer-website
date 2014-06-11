@@ -7,6 +7,7 @@
 
 #header {
    min-height: @headerHeightSmall;
+   height: @headerHeightSmall;
    position: relative;
 
    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
@@ -16,9 +17,10 @@
    .container {
       img {
          position: absolute;
-         top: 0;
          bottom: 0;
+         top: 50%;
          margin: auto;
+         margin-top: -25px;
       }
       h2, h1 {
          margin:5px 0;
@@ -38,6 +40,7 @@
 @media screen and (min-width: @screen-sm-min) {
    #header {
       min-height: @headerHeight;
+      height: @headerHeight;
       padding-left:  20px;
       padding-right: 20px;
       .container {

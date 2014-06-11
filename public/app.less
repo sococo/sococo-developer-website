@@ -1,23 +1,21 @@
 @import "style/sococo";
-@import "../bower_components/bootstrap/less/bootstrap";
+@import "bower/bootstrap/less/bootstrap";
 @import "style/code";
 @import "partials/_header";
 @import "partials/_footer";
 
 
-html {
+html, body {
    position: relative;
-}
-html,body {
+   height: 100%;
    min-height: 100%;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
 }
-
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-
+   position: relative;
    header {
-     a {
+      a {
          font-weight: 300;
       }
    }
