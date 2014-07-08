@@ -2,7 +2,7 @@
    "globals": {
       "name"  : "Sococo Developers",
       "description": "",
-      "url": "/dev-site/www/",
+      "url": "/",
       "githubUrl":"https://github.com/sococo",
       "twitterUrl":"https://twitter.com/sococo"
    }
