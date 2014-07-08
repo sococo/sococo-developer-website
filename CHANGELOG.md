@@ -2,6 +2,10 @@
 ### 0.0.1 (2014-07-08)
 
 
+<a name="0.0.1"></a>
+### 0.0.1 (2014-07-08)
+
+
 #### Bug Fixes
 
 * **compile:** fix error by not trying to compile bower dir ([06eea9d7](http://github.com/sococo/sococo-developer-website/commit/06eea9d7d212a6762dde2dd7bc57ecf8d659abd6))
