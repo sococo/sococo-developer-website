@@ -1,6 +1,6 @@
 {
   "name": "sococo-developer-website",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Documentation for working with Sococo APIs",
   "main": "index.js",
   "dependencies": {

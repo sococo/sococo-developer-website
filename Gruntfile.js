@@ -44,7 +44,7 @@ module.exports = function(grunt) {
             updateConfigs: ['pkg'],
             commit: true,
             commitMessage: 'chore(deploy): release v%VERSION%',
-            commitFiles: ['package.json', 'bower.json', 'CHANGELOG.md'],
+            commitFiles: ['package.json', 'bower.json', 'CHANGELOG.md', 'harp-develop.json', 'harp-release.json'],
             createTag: true,
             tagName: 'v%VERSION%',
             tagMessage: 'Version %VERSION%',
