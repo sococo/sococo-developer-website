@@ -1,0 +1,31 @@
+{
+  "name": "sococo-developer-website",
+  "version": "0.0.0",
+  "description": "Documentation for working with Sococo APIs",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "0.4.5",
+    "grunt-harp": "0.1.4",
+    "underscore": "1.6.0",
+    "grunt-contrib-copy": "0.5.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-npm": "0.0.2",
+    "grunt-bump": "0.0.14",
+    "grunt-conventional-changelog": "1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sococo/sococo-developer-website.git"
+  },
+  "author": "Justin DuJardin <justin.dujardin@sococo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sococo/sococo-developer-website/issues"
+  },
+  "homepage": "https://github.com/sococo/sococo-developer-website"
+}
