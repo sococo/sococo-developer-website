@@ -11,14 +11,9 @@ module.exports = function(grunt) {
       },
 
       copy: {
-         develop: {
-            files: [
-               { src: ['harp-develop.json'], dest: 'harp.json', filter: 'isFile'}
-            ]
-         },
          release: {
             files: [
-               { src: ['harp-release.json'], dest: 'harp.json', filter: 'isFile'}
+               { src: ['public/_bower/html5shiv/dist/html5shiv.min.js'], dest: 'www/_bower/html5shiv/dist/html5shiv.js', filter: 'isFile'}
             ]
          }
       },
@@ -40,11 +35,11 @@ module.exports = function(grunt) {
        */
       bump: {
          options: {
-            files: ['package.json', 'bower.json', 'harp-develop.json', 'harp-release.json'],
+            files: ['package.json', 'bower.json', 'harp.json'],
             updateConfigs: ['pkg'],
             commit: true,
             commitMessage: 'chore(deploy): release v%VERSION%',
-            commitFiles: ['package.json', 'bower.json', 'CHANGELOG.md', 'harp-develop.json', 'harp-release.json'],
+            commitFiles: ['package.json', 'bower.json', 'CHANGELOG.md', 'harp.json'],
             createTag: true,
             tagName: 'v%VERSION%',
             tagMessage: 'Version %VERSION%',
@@ -83,5 +78,5 @@ module.exports = function(grunt) {
    grunt.registerTask('default', ['clean','copy:develop','harp:develop']);
 
    // Build static site for release builds
-   grunt.registerTask('teamcity', ['clean','copy:release','harp:release']);
+   grunt.registerTask('teamcity', ['clean','harp:release','copy:release']);
 };
