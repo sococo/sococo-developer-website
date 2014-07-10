@@ -10,9 +10,12 @@ Sent to an area server REST endpoint, never turned into soda.
 ```json
 {
 	"token":"TOKEN",
-	"location":"GUEST_ACCESS_ZURL"
+	"room":"ROOM_CODE"
 }
 ```
+
+The token is obtained from the Sococo console User Profile area (https://www.sococo.com/console#user).
+The room code can be obtained from the copy room link feature in the Sococo Client; it is the final part of the url path, for example: "3697fb45o3u6dybej4cs2ocyl"
 
 ### Login response
 Response code indicates success/reason for failure.  The encrypted cookie should include routing information for the VIP.  The sessionId is actually a channel ID.  The name was chosen to be clearer for non-Sococo API clients.  The session ID should be removed from this message if we can store it in the HTTP cookie.  Response from a REST endpoint, never turned into soda.
