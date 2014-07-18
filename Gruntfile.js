@@ -75,7 +75,7 @@ module.exports = function(grunt) {
       ]);
    });
    // Default development task
-   grunt.registerTask('default', ['clean','copy:develop','harp:develop']);
+   grunt.registerTask('default', ['clean','harp:develop']);
 
    // Build static site for release builds
    grunt.registerTask('teamcity', ['clean','harp:release','copy:release']);
