@@ -12,8 +12,8 @@ A full example of initiating a connection and supporting sending and receiving c
 **Steps for establishing a streaming connection**:
 
 * Authenticate against `https://as-vip.sococo.com/api/v1/login`.
-* Parse the response for the authentication cookie. This is a standard cookie format.
-* Create a new Bayeux/Faye client instance with Sococo’s Bayeux stream url.
+* Parse the response for the authentication cookie. The response will contain two cookies, `API-Cookie` and “API-Route`. You will need to include both.
+* Create a new Bayeux/Faye client instance with Sococo’s Bayeux stream url (`https://as-vip.sococo.net/api/v1/bayeux`).
 * Set the cookie header on the Bayeux/Faye client connection to match the response from the authentication.
 * Connect to Sococo’s Bayeux stream url.
 * Subscribe to the `/service/stream` channel.
