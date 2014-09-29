@@ -1,30 +1,30 @@
 {
 	"generating-an-api-token":{
-		"title":"Generating an API token",
+		"title":"1. Generating an API token",
       "blurb":"How to generate an API token"
 	},
    "re-issuing-an-api-token":{
-		"title":"Re-issuing an API token",
+		"title":"2. Re-issuing an API token",
       "blurb":"How to revoke an existing API token and generate a new one"
 	},
    "authentication":{
-		"title":"Authentication",
+		"title":"3. Authentication",
       "blurb":"How to authenticate with the streaming API"
 	},
 	"generating-a-streaming-connection":{
-		"title":"Generating a streaming connection",
+		"title":"4. Generating a streaming connection",
       "blurb":"How to establish a real-time connection with Sococo's API servers"
 	},
 	"sending-a-message":{
-		"title":"Sending a message",
+		"title":"5. Sending a message",
       "blurb":"How to send a message to Sococo clients"
 	},
    "receiving-a-message":{
-		"title":"Receiving a message",
+		"title":"6. Receiving a message",
       "blurb":"How to listen for incoming messages"
 	},
    "hubot-adapter":{
-		"title":"Hubot adapter",
+		"title":"7. Hubot adapter",
       "blurb":"How to integrate Sococo with Hubot"
 	}
 }
