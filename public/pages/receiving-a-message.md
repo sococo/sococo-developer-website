@@ -13,4 +13,4 @@ Incoming chat messages will be received on the `/service/stream` channel if youâ
   
 An example of this interaction can be found in our Hubot adapter [here](https://github.com/sococo/hubot-sococo/blob/master/source/sococo.coffee#L126-L149).
 
-You will receive messages as long as you are connected and subscribed to the `/service/stream` channel. Note that the API client will show up as a 'robot' avatar in the room you are authenticated into. In this was, we allow the API clients presence to be transparent to the users who are present in the room.
+You will receive messages as long as you are connected and subscribed to the `/service/stream` channel. Note that the API client will show up as a 'robot' avatar in the room you are authenticated into. In this way, we allow the API client's presence to be transparent to the users who are present in the room.
