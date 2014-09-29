@@ -5,7 +5,7 @@ To generate an API token, navigate over to the Administrative Console for [your 
   
 When you click on ”Create Token,” it should generate a 36 character long token for you. Keep this a secret as it will allow access to any room for which your account has access.
   
-Some people generate a Sococo account specific for their API access so they can quickly change access rights without effecting their user account. Feel free to do the same!
+Some people generate a Sococo account specific for their API access so they can quickly change access rights without affecting their user account. Feel free to do the same!
   
 ### Sococo Admin Website
   
