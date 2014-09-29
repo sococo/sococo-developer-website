@@ -33,7 +33,7 @@ Environment variables for use with Sococo’s Hubot adapter:
 			</td>
 			<td>
 				This code represents the room you’d like to authenticate into. You can find this code by right clicking on any room in Sococo and clicking “Copy Room Link” or clicking on “Edit Room”<br /><br />
-				
+
 				Example Copied Link: <br />
 				https://www.sococo.com/web/join/1a6b6dce4sw07a2c42d1fuuo7<br /><br />
 
@@ -46,7 +46,7 @@ Environment variables for use with Sococo’s Hubot adapter:
 				HUBOT_SOCOCO_TOKEN
 			</td>
 			<td>
-				This is your API token. See the section [“Generating an API Token”](/pages/generating-an-api-token)
+				This is your API token. See the section [“Generating an API Token”](/pages/generating-an-api-token.html)
 			</td>
 		</tr>
 	</tbody>
