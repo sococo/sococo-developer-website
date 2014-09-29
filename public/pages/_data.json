@@ -1,31 +1,27 @@
 {
-	"issue-api-token":{
+	"generating-an-api-token":{
 		"title":"Generating an API token",
       "blurb":"How to generate an API token"
 	},
-   "revoke-api-token":{
+   "re-issuing-an-api-token":{
 		"title":"Re-issuing an API token",
       "blurb":"How to revoke an existing API token and generate a new one"
 	},
-   "authenticate":{
+   "authentication":{
 		"title":"Authentication",
       "blurb":"How to authenticate with the streaming API"
 	},
-	"send-chat-message":{
+	"generating-a-streaming-connection":{
+		"title":"Generating a streaming connection",
+      "blurb":"How to establish a real-time connection with Sococo's API servers"
+	},
+	"sending-a-message":{
 		"title":"Sending a message",
       "blurb":"How to send a message to Sococo clients"
 	},
-   "receive-chat-message":{
+   "receiving-a-message":{
 		"title":"Receiving a message",
       "blurb":"How to listen for incoming messages"
-	},
-   "json-format":{
-		"title":"Raw JSON appendix",
-      "blurb":"JSON Format for Streaming API"
-	},
-   "javascript-client":{
-		"title":"Javascript client",
-      "blurb":"Using Sococo Streaming API from a javascript client"
 	},
    "hubot-adapter":{
 		"title":"Hubot adapter",
