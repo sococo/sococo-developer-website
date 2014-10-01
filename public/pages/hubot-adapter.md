@@ -24,7 +24,7 @@ Environment variables for use with Sococo’s Hubot adapter:
 				HUBOT_SOCOCO_SERVER
 			</td>
 			<td>
-				This should always be as-vip.sococo.net
+				This should always be https://as-vip.sococo.net
 			</td>
 		</tr>
 		<tr>
