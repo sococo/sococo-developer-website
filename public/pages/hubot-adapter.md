@@ -3,7 +3,7 @@ Hubot adapter
 
 We’ve open sourced our Hubot adapter, which you can find here: https://github.com/sococo/hubot-sococo
 
-Its also published to npm (node package manager) under `hubot-sococo`. You can install the Sococo Hubot adapter by running `npm install --save hubot-sococo` inside your hubot (created with a --create as necessary). Check out the hubot specific instructions here: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
+It’s also published to npm (node package manager) under `hubot-sococo`. You can install the Sococo Hubot adapter by running `npm install --save hubot-sococo` inside your hubot (created with a --create as necessary). Check out the hubot specific instructions here: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
 
 Environment variables for use with Sococo’s Hubot adapter:
 

@@ -40,7 +40,7 @@ To authenticate using the Sococo streaming API, you need to POST an api token an
 	</tbody>
 </table>
 
-To form an authentication request, you will issue a POST to https://as-vip.sococo.com/api/v1/login
+To form an authentication request, you will issue a POST to https://as-vip.sococo.net/api/v1/login
 
 The body of the request will need to be JSON encoded and contain the API Token and Room Code. The response will contain two cookie values “API-Cookie” and “API-Route.” These will need to be saved for establishing your streaming connection.
 
