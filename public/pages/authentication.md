@@ -47,8 +47,8 @@ The body of the request will need to be JSON encoded and contain the API Token a
 **Example POST**:
 ```
 {
-	“token”: “[YOUR API TOKEN HERE]”,
-	“room”: “[YOUR ROOM CODE HERE]”
+	"token": "[YOUR API TOKEN HERE]",
+	"room": "[YOUR ROOM CODE HERE]"
 }
 ```
 
