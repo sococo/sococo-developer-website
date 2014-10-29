@@ -26,5 +26,9 @@
    "hubot-adapter":{
 		"title":"7. Hubot adapter",
       "blurb":"How to integrate Sococo with Hubot"
+	},
+	"faq":{
+		"title":"8. FAQ",
+      "blurb":"Answers to common questions during development"	
 	}
 }
