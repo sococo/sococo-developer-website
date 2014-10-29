@@ -42,8 +42,8 @@ EK08O/dunyJK/X8Ug==; API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7Vio
 **Q.**  Getting 403 when publishing a message on `/bayeux`  
 **A.**  This indicates that your login was expired by our API server, possibly due to a network disconnection of your client. When a network disconnection occurs, many of the bayeux client libraries available will automatically attempt to restore the bayeux stream when it becomes available.  If the disconnection is longer than a few seconds your login will be expired and you must re-authenticate.       
        
-**Q.** What should I include when reporting a problem?  
-**A.** If possible, problems reported with the streaming API should include all the following:  
+**Q.** What should I include when reporting a problem?    
+**A.** If possible, problems reported with the streaming API should include all the following:    
 * Request URL (`/api/v1/login` or `/api/v1/bayeux`) and HTTP cookies received and/or sent.  
 * HTTP response code.  
 * HTTP response body.  
