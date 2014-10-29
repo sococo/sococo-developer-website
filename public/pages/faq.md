@@ -21,7 +21,7 @@ A. One or both of the required cookies are missing from your HTTP headers.
 Q. Getting a 400 status code during `/bayeux`  
 A. You may be sending the cookies back altered or in a non-RFC-compliant format.  The cookie values returned from /login must not be altered and must be sent back in compliance with RFC 6265.  
 	
-   For example, in the response from '/login' you will receive set-cookie headers similar to the following:  
+   For example, in the response from `/login` you will receive set-cookie headers similar to the following:  
 `Set-Cookie: API-Cookie=!fdLbEYZzxb+QuB1sJWKU4R1agn+aZHgdHvrO5r8mJZhiyzavktk6v6plHlX/w09CTIxaVpXdDKz5I11K2nMfwwV6R0EO7T5BEeKCsjtHdaAQdj9X1ggLFbEOaIY/Nl8GU8Amvu3pyhrpvkVSciKhcVaHoEbBlZ3rWpf7NAdlohuMb6RQdRdeiVr1t0YQwM4cWWw8XNr+YguGkCReVuXnaJM+xx1vx6iikfVnlYKgdIcvUrjj0eZwjRr8c61xTJr2cpvIDZrNvtrGhEkbjkgEK08O/dunyJK/X8Ug==; Version=1
 Set-Cookie: API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7VioPyWOevFjeEDFYIeRk+oCw=; Version=1`
 
@@ -34,10 +34,13 @@ Q. Getting a 503 status code
 A. A couple possibilities    
   * This usually means your space is not running yet.  Use a Mac or Windows client to start up your space, then login your bot.  The bot can then remain logged in.  
   * The server may be temporarily busy.  Desktop and mobile clients get priority over API clients.  Try again in 5 minutes.  
+  
+Q.  Getting 403 when publishing a message on `/bayeux`  
+A.  This indicates that your login was expired by our API server, possibly due to a network disconnection of your client. When a network disconnection occurs, many of the bayeux client libraries available will automatically attempt to restore the bayeux stream when it becomes available.  If the disconnection is longer than a few seconds your login will be expired and you must re-authenticate.       
      
 Q. What should I include when reporting a problem?  
 A. If possible, problems reported with the streaming API should include all the following:  
-  * Request URL (/api/v1/login or /api/v1/bayeux) and HTTP cookies received and/or sent.  
+  * Request URL (`/api/v1/login` or `/api/v1/bayeux`) and HTTP cookies received and/or sent.  
   * HTTP response code.  
   * HTTP response body.  
   * Your external IP address as visible to our servers, obtained via http://www.sococo.com/checkip (request this from the machine that is running your API client code)  
