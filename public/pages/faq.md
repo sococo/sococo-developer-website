@@ -1,6 +1,8 @@
 ﻿Frequently Asked Questions
 ---
 
+Answers to some common questions about using the Sococo APIs.
+
 #### What should I include when reporting a problem?
 If possible, problems reported with the streaming API should include all the following:
 
@@ -32,11 +34,14 @@ You may be sending the cookies back altered or in a non-RFC-compliant format.  T
   	
 For example, in the response from `/login` you will receive set-cookie headers similar to the following:  
 
-> Set-Cookie: API-Cookie=!fdLbEYZzxb+QuB1sJWKU4R1agn+aZHgdHvrO5r8mJZhiyzavktk6v6plHlX/w09CTIxaVpXdDKz5I11K2nMfwwV6R0EO7T5BEeKCsjtHdaAQdj9X1ggLFbEOaIY/Nl8GU8Amvu3pyhrpvkVSciKhcVaHoEbBlZ3rWpf7NAdlohuMb6RQdRdeiVr1t0YQwM4cWWw8XNr+YguGkCReVuXnaJM+xx1vx6iikfVnlYKgdIcvUrjj0eZwjRr8c61xTJr2cpvIDZrNvtrGhEkbjkgEK08O/dunyJK/X8Ug==; Version=1Set-Cookie: API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7VioPyWOevFjeEDFYIeRk+oCw=; Version=1
-  
+```
+Set-Cookie: API-Cookie=!fdLbEYZzxb+QuB1sJWKU4R1agn+aZHgdHvrO5r8mJZhiyzavktk6v6plHlX/w09CTIxaVpXdDKz5I11K2nMfwwV6R0EO7T5BEeKCsjtHdaAQdj9X1ggLFbEOaIY/Nl8GU8Amvu3pyhrpvkVSciKhcVaHoEbBlZ3rWpf7NAdlohuMb6RQdRdeiVr1t0YQwM4cWWw8XNr+YguGkCReVuXnaJM+xx1vx6iikfVnlYKgdIcvUrjj0eZwjRr8c61xTJr2cpvIDZrNvtrGhEkbjkgEK08O/dunyJK/X8Ug==; Version=1
+Set-Cookie:API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7VioPyWOevFjeEDFYIeRk+oCw=; Version=1
+```
 Your subsequent request to `/bayeux` should contain the following cookie header:  
-> Cookie: API-Cookie=!fdLbEYZzxb+QuB1sJWKU4R1agn+aZHgdHvrO5r8mJZhiyzavktk6v6plHlX/w09CTIxaVpXdDKz5I11K2nMfwwV6R0EO7T5BEeKCsjtHdaAQdj9X1ggLFbEOaIY/Nl8GU8Amvu3pyhrpvkVSciKhcVaHoEbBlZ3rWpf7NAdlohuMb6RQdRdeiVr1t0YQwM4cWWw8XNr+YguGkCReVuXnaJM+xx1vx6iikfVnlYKgdIcvUrjj0eZwjRr8c61xTJr2cpvIDZrNvtrGhEkbjkgEK08O/dunyJK/X8Ug==; API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7VioPyWOevFjeEDFYIeRk+oCw=
-  
+```
+Cookie: API-Cookie=!fdLbEYZzxb+QuB1sJWKU4R1agn+aZHgdHvrO5r8mJZhiyzavktk6v6plHlX/w09CTIxaVpXdDKz5I11K2nMfwwV6R0EO7T5BEeKCsjtHdaAQdj9X1ggLFbEOaIY/Nl8GU8Amvu3pyhrpvkVSciKhcVaHoEbBlZ3rWpf7NAdlohuMb6RQdRdeiVr1t0YQwM4cWWw8XNr+YguGkCReVuXnaJM+xx1vx6iikfVnlYKgdIcvUrjj0eZwjRr8c61xTJr2cpvIDZrNvtrGhEkbjkgEK08O/dunyJK/X8Ug==;API-Route=!w0fZLIbep/i6GB1sJWKU4R1agn+XdspD1Dw3sI1CCmVt7VioPyWOevFjeEDFYIeRk+oCw=
+```  
 You must not return cookie attributes such as 'Expires', 'Version' etc. and you must not perform any encoding or escaping of the cookie value.    
     	
 #### Getting a 503 status code    
