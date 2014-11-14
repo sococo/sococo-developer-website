@@ -4,7 +4,7 @@ Documentation site describing how to interact with public Sococo APIs.
 
 ### Prerequisites
 
-Make sure you have node, npm, and grunt installed.  `npm install` in this directory.
+Make sure you have node, npm, and grunt installed.  `npm install` and `bower install` in this directory.
 
 ### Development
 
