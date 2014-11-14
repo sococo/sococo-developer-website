@@ -1,78 +1,62 @@
+@sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sococo-dark-gray2: #303030;
+@sococo-light-gray: #E6E6E6;
+
 @footerHeight:40px;
 @footerExpanded: 140px;
 @footerBackgroundColor:#3a464e;
 @footerTextColor:#929497;
-@footerPaddingTotal: @footerExpanded + @footerHeight;
-body {
-
-   .body-container {
-      min-height: 100% !important;
-      position: relative;
-      padding-bottom:@footerPaddingTotal;
-
-   }
-   main {
-      .content-push {
-         height:@footerPaddingTotal;
-      }
-   }
-
-   #footer {
-      font-size: 12px;
-      position:relative;
-      width:100%;
-      line-height: @footerHeight;
-      color:@footerTextColor;
-      overflow: hidden;
-      margin-top: -(@footerExpanded + @footerHeight);
-      .avatar {
-         position: absolute;
-         right:40px;
-         bottom:-45px;
-         z-index: 1;
-         // Simple pop-up transition on hover
-         .transition(all 0.1s ease-in-out);
-         &:hover {
-            bottom:-10px;
-         }
-      }
-
-      .bottom, .expanded {
-         width:100%;
-      }
-      .bottom {
-         background:@footerBackgroundColor;
-         position: absolute;
-         left:0;
-         right:0;
-         bottom:0;
-         height:@footerHeight;
-         z-index: 2;
-         a {
-            color:@sococoBlue;
-            &:hover {
-               text-decoration: none;
-            }
-         }
-         .dot {
-            padding-left: 5px;
-            padding-right: 5px;
-         }
-
-         .container {
-            .pull-left {
-               margin-right:5px;
+.footer{
+   background-color: @sococo-dark-gray2;
+   height: 110px;
+   .footerNav{
+      margin-top: 45px;
+      margin-left: 50px;
+      float: left;
+      li{
+         display: inline;
+         margin-right: 20px;
+         a{
+            font-family: @sansFontFamily;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            &:hover{
+               text-decoration: underline;
+               color: @sococo-light-gray;
             }
          }
       }
-
-      .expanded {
-         height:@footerExpanded + @footerHeight;
-         background-color: @blueFooter;
-         a {
-            font-size: 15px;
-            color:#fff;
-         }
+   }
+   .footerSocial{
+      margin-top: 40px;
+      margin-right: 20px;
+      float: right;
+      li{
+         display: inline;
+         margin-right: 40px;
       }
    }
+}
+.copyright{ 
+   margin-top: 50px;
+   height: 60px;
+   h4{
+      text-align: center;
+   }
+}
+@media (max-width: 480px){
+.footer{
+   height: 120px !important;
+   ul.footerSocial{
+
+         margin-left: 0px;
+         li{
+            margin: 5px 5px 0 0 !important;
+         }
+        
+   }
+  
+}
+ 
 }
